@@ -9,6 +9,16 @@ dependencies {
     compile 'org.scala-lang:scala-library:2.11.1'
 }
 
+ext.scalaVersion = "2.11.1"
+
+
+libraryDependencies += "org.scala-lang" % "scala-compiler" % scalaVersion
+
+dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion
+
+libraryDependencies += "org.scala-lang" % "scala-reflect" % scalaVersion
+dependencyOverrides += "org.scala-lang" % "scala-reflect" % scalaVersion
+
 sourceSets {
     main {
         scala {
