@@ -53,17 +53,17 @@ object  FindSecondMinimumValue {
     def main(args: Array[String]): Unit = {
       val head = new TreeNode(2)
       val headLeft = new TreeNode(2)
-      val headRight = new TreeNode(2)
-      val t1 = new TreeNode(7)
-      val t1Right = new TreeNode(10)
-      val left = new TreeNode(10)
-      val right = new TreeNode(10)
+      val headRight = new TreeNode(5)
+      val t1 = new TreeNode(5)
+      val t1Right = new TreeNode(7)
+//      val left = new TreeNode(10)
+//      val right = new TreeNode(10)
       head.left = headLeft
       head.right = headRight
       headRight.left = t1
       headRight.right = t1Right
-      t1Right.left = left
-      t1Right.right = right
+//      t1Right.left = left
+//      t1Right.right = right
 
       println(s"The result: ${findSecondMinimumValue(head)}")
     }

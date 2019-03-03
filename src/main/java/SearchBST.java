@@ -22,7 +22,7 @@ In the example above, if we want to search the value 5, since there is no node w
 public class SearchBST {
     static TreeNode searchBST(TreeNode root, int val) {
         if(root==null)return null;
-        if(root.val == val)return root;
+        if(root.value == val)return root;
         TreeNode left = searchBST(root.left, val);
         TreeNode right = searchBST(root.right, val);
         if(left!=null)return left;

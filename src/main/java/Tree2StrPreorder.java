@@ -32,7 +32,7 @@ public class Tree2StrPreorder {
     public String tree2str(TreeNode t) {
         if(t == null) return "";
         else{
-            String res = t.val+"";
+            String res = t.value+"";
             String left = tree2str(t.left);
             String right = tree2str(t.right);
             if(!left.equals(""))res = res + "(" + left + ")";

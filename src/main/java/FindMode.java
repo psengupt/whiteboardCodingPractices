@@ -11,14 +11,14 @@ Given BST [1,null,2,2],
    2
    return [2]*/
 class TreeNode {
-     int val;
+     int value;
      TreeNode left;
      TreeNode right;
-     TreeNode(int x) { val = x; left = null; right=null;}
+     TreeNode(int x) { value = x; left = null; right=null;}
 
       public String toString() {
 
-        String res = val+"";
+        String res = value+"";
         String lStr = (left==null)? "()": left.toString();
         String rStr = (right==null)? "()": right.toString();
         return res + lStr + rStr;
@@ -43,13 +43,13 @@ class TreeNode {
              int freq = left+right+1;
              if(freq>maxFreq) {
                  s = new HashSet<Integer>();
-                 s.add(root.val);
+                 s.add(root.value);
                  maxFreq = freq;
              } else if(freq==maxFreq){
-                 s.add(root.val);
+                 s.add(root.value);
              }
              if(prev != null){
-                 if(prev.val==root.val){
+                 if(prev.value==root.value){
                      return freq;
                  } else {
                      return 0;
